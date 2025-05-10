@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace One Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Market<span>Place</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Temukan Produk Terbaik untuk Kebutuhan Anda</h1>
+                <p>Marketplace terpercaya dengan ribuan produk berkualitas dan harga terjangkau</p>
+                <a href="#products" class="btn-primary">Jelajahi Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tentang Kami</h2>
+                <p>Kenali lebih dekat marketplace kami</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-image.jpg" alt="Tentang Kami">
+                </div>
+                <div class="about-text">
+                    <h3>Marketplace Terpercaya Sejak 2018</h3>
+                    <p>MarketPlace hadir sebagai solusi belanja online yang aman, nyaman, dan terpercaya. Kami menghubungkan pembeli dengan penjual terbaik di seluruh Indonesia.</p>
+                    <p>Visi kami adalah menjadi marketplace terdepan yang mengutamakan kualitas produk dan kepuasan pelanggan. Dengan tim yang berpengalaman, kami berkomitmen memberikan layanan terbaik untuk semua pengguna.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>10K+</h4>
+                            <p>Produk</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>5K+</h4>
+                            <p>Pelanggan</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>500+</h4>
+                            <p>Penjual</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Produk Kami</h2>
+                <p>Temukan berbagai produk berkualitas</p>
+            </div>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="electronics">Elektronik</button>
+                <button class="category-btn" data-category="fashion">Fashion</button>
+                <button class="category-btn" data-category="home">Rumah Tangga</button>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="images/product-1.jpg" alt="Smartphone XYZ">
+                        <div class="product-tag">Baru</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartphone XYZ</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(120)</span>
+                        </div>
+                        <p class="product-price">Rp 3.500.000</p>
+                        <button class="btn-secondary">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-category="fashion">
+                    <div class="product-image">
+                        <img src="images/product-2.jpg" alt="Kemeja Pria">
+                        <div class="product-tag">Diskon</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kemeja Pria Premium</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(85)</span>
+                        </div>
+                        <p class="product-price"><span class="old-price">Rp 350.000</span> Rp 275.000</p>
+                        <button class="btn-secondary">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-category="home">
+                    <div class="product-image">
+                        <img src="images/product-3.jpg" alt="Blender Multifungsi">
+                    </div>
+                    <div class="product-info">
+                        <h3>Blender Multifungsi</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(210)</span>
+                        </div>
+                        <p class="product-price">Rp 750.000</p>
+                        <button class="btn-secondary">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="images/product-4.jpg" alt="Headphone Wireless">
+                        <div class="product-tag">Terlaris</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Headphone Wireless</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(320)</span>
+                        </div>
+                        <p class="product-price">Rp 1.200.000</p>
+                        <button class="btn-secondary">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card" data-category="fashion">
+                    <div class="product-image">
+                        <img src="images/product-5.jpg" alt="Tas Wanita">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tas Wanita Elegant</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>(75)</span>
+                        </div>
+                        <p class="product-price">Rp 450.000</p>
+                        <button class="btn-secondary">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" data-category="home">
+                    <div class="product-image">
+                        <img src="images/product-6.jpg" alt="Panci Set">
+                        <div class="product-tag">Diskon</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Panci Set Anti Lengket</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(95)</span>
+                        </div>
+                        <p class="product-price"><span class="old-price">Rp 1.200.000</span> Rp 899.000</p>
+                        <button class="btn-secondary">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-cta">
+                <a href="#" class="btn-primary">Lihat Semua Produk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimoni Pelanggan</h2>
+                <p>Apa kata mereka tentang kami</p>
+            </div>
+            <div class="testimonials-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-1.jpg" alt="Budi Santoso">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Saya sangat puas berbelanja di MarketPlace. Produknya berkualitas, pengiriman cepat, dan layanan pelanggan sangat responsif. Pasti akan belanja lagi di sini!"</p>
+                        <div class="testimonial-author">
+                            <h4>Budi Santoso</h4>
+                            <p>Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-2.jpg" alt="Siti Rahayu">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"Harga di MarketPlace sangat bersaing dan banyak promo menarik. Saya sudah berlangganan selama 2 tahun dan belum pernah kecewa dengan layanannya."</p>
+                        <div class="testimonial-author">
+                            <h4>Siti Rahayu</h4>
+                            <p>Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-3.jpg" alt="Andi Wijaya">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Proses pembelian sangat mudah dan aman. Saya suka fitur pelacakan pesanan yang memungkinkan saya memantau status pengiriman secara real-time."</p>
+                        <div class="testimonial-author">
+                            <h4>Andi Wijaya</h4>
+                            <p>Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button id="prev-testimonial" class="testimonial-control-btn"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-testimonial" class="testimonial-control-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hubungi Kami</h2>
+                <p>Kami siap membantu Anda</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Alamat</h3>
+                            <p>Jl. Pahlawan No. 123, Jakarta Pusat, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Telepon</h3>
+                            <p>+62 21 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@marketplace.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Jumat: 08.00 - 17.00</p>
+                            <p>Sabtu: 09.00 - 15.00</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pertanyaan Umum</h2>
+                <p>Temukan jawaban atas pertanyaan yang sering diajukan</p>
+            </div>
+            <div class="faq-content">
+                <div class="accordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Bagaimana cara berbelanja di MarketPlace?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Berbelanja di MarketPlace sangat mudah. Anda cukup membuat akun, mencari produk yang diinginkan, menambahkannya ke keranjang, dan melakukan pembayaran. Setelah pembayaran dikonfirmasi, pesanan Anda akan segera diproses dan dikirim.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Metode pembayaran apa saja yang tersedia?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Kami menerima berbagai metode pembayaran, termasuk transfer bank, kartu kredit/debit, e-wallet (OVO, GoPay, DANA, LinkAja), dan pembayaran melalui minimarket (Indomaret, Alfamart).</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Berapa lama waktu pengiriman?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Waktu pengiriman bervariasi tergantung lokasi dan jasa pengiriman yang dipilih. Untuk pengiriman dalam kota biasanya membutuhkan waktu 1-2 hari, sedangkan pengiriman antar kota/pulau dapat memakan waktu 3-7 hari kerja.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Bagaimana kebijakan pengembalian produk?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Kami menerima pengembalian produk dalam waktu 7 hari setelah penerimaan jika produk rusak atau tidak sesuai dengan deskripsi. Biaya pengiriman untuk pengembalian ditanggung oleh pembeli, kecuali jika produk cacat atau salah kirim.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Apakah MarketPlace menyediakan garansi produk?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Garansi produk tergantung pada kebijakan masing-masing penjual dan produsen. Informasi mengenai garansi dapat dilihat pada deskripsi produk. Kami menyarankan untuk selalu memeriksa informasi garansi sebelum melakukan pembelian.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Market<span>Place</span></h2>
+                    <p>Marketplace terpercaya dengan ribuan produk berkualitas dan harga terjangkau.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Tautan Cepat</h3>
+                        <ul>
+                            <li><a href="#hero">Beranda</a></li>
+                            <li><a href="#about">Tentang Kami</a></li>
+                            <li><a href="#products">Produk</a></li>
+                            <li><a href="#testimonials">Testimoni</a></li>
+                            <li><a href="#contact">Kontak</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Kategori</h3>
+                        <ul>
+                            <li><a href="#">Elektronik</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Rumah Tangga</a></li>
+                            <li><a href="#">Kesehatan & Kecantikan</a></li>
+                            <li><a href="#">Olahraga</a></li>
+                            <li><a href="#">Mainan & Hobi</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Layanan</h3>
+                        <ul>
+                            <li><a href="#">Cara Berbelanja</a></li>
+                            <li><a href="#">Metode Pembayaran</a></li>
+                            <li><a href="#">Pengiriman</a></li>
+                            <li><a href="#">Pengembalian Produk</a></li>
+                            <li><a href="#">Garansi</a></li>
+                            <li><a href="#">Bantuan</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Berlangganan Newsletter</h3>
+                    <p>Dapatkan informasi terbaru dan penawaran menarik dari kami</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Alamat Email Anda" required>
+                        <button type="submit">Langganan</button>
+                    </form>
+                    <div class="payment-methods">
+                        <h4>Metode Pembayaran</h4>
+                        <div class="payment-icons">
+                            <img src="images/payment-visa.png" alt="Visa">
+                            <img src="images/payment-mastercard.png" alt="Mastercard">
+                            <img src="images/payment-paypal.png" alt="PayPal">
+                            <img src="images/payment-bank.png" alt="Bank Transfer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MarketPlace. Hak Cipta Dilindungi.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#hero" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
